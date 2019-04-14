@@ -8,8 +8,16 @@
                 font-size: 20px;
                 height: 80px;
             }
+            /*Скрыть точки в списке и сдвиг*/
+            li {
+                list-style-type: none;
+            }
+            ul {
+                margin-left: 0;
+                padding-left: 0;
+            }
             #profile{
-                background-color: #ccc;
+                background-color: #f0eeee;
                 width: 180px;
                 height: 380px;
                 margin-left: 500px;
@@ -17,25 +25,23 @@
                 text-align: center;
             }
             #photo{
-                background-color: #ccc;
+                background-color: #f0eeee;
                 width: 180px;
                 height: 380px;
                 margin-top: 20px;
                 margin-left: 700px;
                 text-align: center;
             }
-
             #friends{
-                background-color: #ccc;
+                background-color: #f0eeee;
                 width: 180px;
                 height: 300px;
                 margin-top: 20px;
                 margin-left: 700px;
                 text-align: center;
             }
-
             #info{
-                background-color: #ccc;
+                background-color: #f0eeee;
                 width: 450px;
                 height: 380px;
                 float: right;
@@ -44,7 +50,7 @@
                 text-align: center;
             }
             #wall{
-                background-color: #ccc;
+                background-color: #f0eeee;
                 width: 450px;
                 height: 300px;
                 margin-top: -302px;
@@ -54,10 +60,32 @@
         </style>
     </head>
     <body>
-        <div id="profile">Профиль</div>
-        <div id="photo">Фото</div>
-        <div id="info">Информация</div>
-        <div id="friends">Друзья</div>
-        <div id="wall">Стена</div>
+        <div id="profile">
+            <h4>Профиль</h4>
+            <nav>
+                <ul>
+                    <li><a href="">Моя страница</a></li>
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Сообщения</a></li>
+                    <li><a href="">Друзья</a></li>
+                    <li><a href="">Группы</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="photo"><h4>Фото</h4></div>
+        <div id="info">
+            <h4>Информация</h4>
+            <nav>
+                <ul>
+                    <li>День рождения:</li>
+                    <li>Город:</li>
+                    <li>Семейное положение:</li>
+                    <li>Место учебы:</li>
+                    <li><a href="">Основная информация</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="friends"><h4>Друзья</h4></div>
+        <div id="wall"><h4>Стена</h4></div>
     </body>
 </html>
