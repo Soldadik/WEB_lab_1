@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Social Network</title>
         <style>
+            
             div {
                 border: 1px solid blue;
                 font-size: 20px;
@@ -16,50 +19,137 @@
                 margin-left: 0;
                 padding-left: 0;
             }
-            #profile{
+            #container {
+                width: 1920;
+                height: 1080;
+                margin-top: 1%;
+                position: relative;
+                display: block;
+            }
+            #profile {
                 background-color: #f0eeee;
                 width: 180px;
                 height: 380px;
-                margin-left: 500px;
+                margin-left: 26%;
+                /*margin-left: 500px;*/
                 float: left;
+                position: absolute;
                 text-align: center;
             }
-            #photo{
+            #photo {
                 background-color: #f0eeee;
                 width: 180px;
                 height: 380px;
-                margin-top: 20px;
-                margin-left: 700px;
+                /*margin-top: 20px;*/
+                /*margin-left: 700px;*/
+                margin-left: 39%;
+                float: left;
+                position: absolute;
                 text-align: center;
             }
-            #friends{
-                background-color: #f0eeee;
-                width: 180px;
-                height: 300px;
-                margin-top: 20px;
-                margin-left: 700px;
-                text-align: center;
-            }
-            #info{
+            #info {
                 background-color: #f0eeee;
                 width: 450px;
                 height: 380px;
-                float: right;
-                margin-top: -382px;
-                margin-right: 552px;
+                /*float: left;*/
+               /* margin-top: -23.1%;*/
+                /*margin-top: -382px;*/
+                /*margin-left: 900px;*/
+                margin-left: 52%;
+                /*margin-right: 552px;*/
+                position: absolute;
                 text-align: center;
             }
-            #wall{
+            #friends {
+                clear:both;
+                background-color: #f0eeee;
+                width: 180px;
+                height: 300px;
+                margin-top: 26%;
+                /*margin-top: 20px;*/
+                /*margin-left: 700px; */
+                float: left;
+                margin-left: 39%;
+                position: absolute;
+                text-align: center;
+            }
+            #wall {
                 background-color: #f0eeee;
                 width: 450px;
                 height: 300px;
-                margin-top: -302px;
-                margin-left: 900px;
+                margin-top: 26%;
+                /*margin-top: 300px;*/
+                /*margin-top: -302px;*/
+                /*margin-left: 900px;*/
+                margin-left: 52%;
+                position: absolute;
                 text-align: center;
+            }
+            /*@media screen and (min-width: 100px) {
+                #profile { display: none; }
+            }*/
+            
+            /* Desktop */
+            @media screen and (min-width: 980px) {
+                #profile {
+                    margin-left: 10%;
+                    float: left;
+                    background-color: yellow;
+                }
+                #photo {
+                    /*margin-left: 30%;*/
+                    margin-left: 20px;
+                    background-color: yellow;
+                }
+                #friends {
+                    margin-top: 40%;
+                    margin-left: 30%;
+                    background-color: yellow;
+                }
+                #info {
+                    margin-left: 50%;
+                    margin-right: 15%;
+                    background-color: yellow;
+                }
+                #wall {
+                    margin-left: 50%;
+                    margin-top: 40%;
+                    background-color: yellow;
+                }
+            }
+            /* Tablet */
+            @media screen and (max-width: 979px) {
+                #profile {
+                    margin-left: 20px;
+                    background-color: blue;
+                }
+                #photo {
+                    margin-left: 220px
+                }
+                #friends {
+                    margin-left: 220px
+                }
+                #info {
+                    margin-left: 420px;
+                    max-width: 300px;
+                }
+                #wall {
+                    margin-left: 420px;
+                    max-width: 300px;
+                }
+
+            }
+            /* Phone */
+            @media screen and (max-width: 500px) {
+                /*overflow: scroll*/
+                #profile {
+                    background-color: firebrick;
+                }
             }
         </style>
     </head>
     <body>
+    <!--<div id="container">-->
         <div id="profile">
             <h4>Профиль</h4>
             <nav>
@@ -87,5 +177,6 @@
         </div>
         <div id="friends"><h4>Друзья</h4></div>
         <div id="wall"><h4>Стена</h4></div>
+    <!-- </div> -->
     </body>
 </html>
