@@ -181,7 +181,7 @@
 
             @media screen and (max-width: 740px) {
                 #container {
-                    position: relative;
+                    /*position: relative;*/
                 }
                 #profile {
                     margin-left: 20px;
@@ -190,7 +190,8 @@
                     background-color: blue;
                 }
                 #photo {
-                    height: 200px;
+                    width: 120px;
+                    height: 120px;
                     margin-left: 220px
                 }
                 #friends {
@@ -200,25 +201,103 @@
                     margin-left: 20px
                 }
                 #info {
-                    height: 200px;
-                    margin-left: 420px;
+                    width: 500px;
+                    height: 140px;
+                    font-size: 0.55em;
+                    margin-left: 220px;
+                    margin-top: 140px;
                     position: absolute;
                     max-width: 300px;
                 }
                 #wall {
-                    height: 300px;
-                    width: 500px;   
+                    height: 220px;
+                    width: 300px;   
                     margin-left: 220px;
-                    margin-top: 220px;
+                    margin-top: 300px;
                     position: absolute;
                     /*max-width: 300px;*/
                 }
             }
+
+            @media screen and (max-width: 540px) {
+                #profile {
+                    margin-left: 20px;
+                    width: 140px;
+                    height: 220px;
+                    position: absolute;
+                    font-size: 0.55em;
+                    background-color: firebrick;
+                }
+                #photo {
+                    width: 100px;
+                    height: 100px;
+                    margin-left: 180px
+                }
+                #friends {
+                    width: 140px;
+                    height: 260px;
+                    margin-top: 240px;
+                    position: absolute;
+                    margin-left: 20px
+                }
+                #info {
+                    width: 200px;
+                    height: 100px;
+                    font-size: 0.5em;
+                    margin-left: 180px;
+                    margin-top: 120px;
+                    position: absolute;
+                    max-width: 300px;
+                }
+                #wall {
+                    width: 200px;
+                    height: 260px;
+                    margin-left: 180px;
+                    margin-top: 240px;
+                    position: absolute;
+                    /*max-width: 300px;*/
+                }
+            }
+
             /* Phone */
-            @media screen and (max-width: 500px) {
+            @media screen and (max-width: 400px) {
                 /*overflow: scroll*/
                 #profile {
+                    margin-left: 20px;
+                    width: 100px;
+                    height: 180px;
+                    position: absolute;
+                    font-size: 0.55em;
                     background-color: firebrick;
+                }
+                #photo {
+                    width: 60px;
+                    height: 60px;
+                    margin-left: 140px
+                }
+                #friends {
+                    width: 100px;
+                    height: 240px;
+                    margin-top: 200px;
+                    position: absolute;
+                    margin-left: 20px
+                }
+                #info {
+                    width: 160px;
+                    height: 100px;
+                    font-size: 0.5em;
+                    margin-left: 140px;
+                    margin-top: 80px;
+                    position: absolute;
+                    max-width: 300px;
+                }
+                #wall {
+                    width: 160px;
+                    height: 240px;
+                    margin-left: 140px;
+                    margin-top: 200px;
+                    position: absolute;
+                    /*max-width: 300px;*/
                 }
             }
         </style>
