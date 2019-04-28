@@ -1,0 +1,28 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 1280px;
+}
+
+.main {
+    background: blue;
+}
+
+.header-description {
+    background: red;
+}
+
+.features {
+    background: purple;
+}
+
+.description {
+    background: green;
+}
+
+.footer {
+    background: gold;
+}
