@@ -20,6 +20,12 @@ html, body {
     padding-bottom: 10rem;
 }
 
+@media screen and (max-width: 800px) {
+    .header-description {
+        padding-top: calc(5rem + 40px);
+    }
+}
+
 #features {
     padding: 3rem;
 }
