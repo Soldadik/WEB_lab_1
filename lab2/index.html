@@ -8,18 +8,126 @@
         <title>Landing page</title>
     </head>
     <body>
-        <div class="container">
-            <!-- Краткое описание продукта/услуги -->
-            <div class="header-description"></div>
+        <!-- Навигационная панель -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top text-uppercase" id="Navigation">
+            <div class="container">
+                <img class="img-fluid" src="images/logo.png" alt="">
+                <a class="navbar-brand" href="#">Объединенная аэрокосмическая корпорация</a>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Цены</a>
+                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">О компании</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-            <!-- Особенности -->
-            <div class="features"></div>
+        <!-- Краткое описание продукта/услуги -->
+        <header class="header-description text-white text-center">
+            <div class="container">
+                <h1 class="text-uppercase mb-0">Космический туризм</h1>
+                <br>
+                <h2 class="font-weight-light mb-0">Космические полеты для всех желающих - добро пожаловать в будущее!</h2>
+            </div>
+        </header>
 
-            <!-- Подробное описание продукта/услуги -->
-            <div class="description"></div>
+        <!-- Особенности -->
+        <div class="features bg-light">
+            <div class="container">
+                <br>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <a class="item d-block mx-auto" href="#">
+                            <a>Почувствуйте себя космонавтом!</a>
+                            <img class="img-fluid" src="images/1.png" alt="">
+                            <br>
+                            <a>Мечтали стать космонавтом? Вперед!</a>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <a class="item d-block mx-auto" href="#">
+                            <a>Комфортабельные корабли!</a>
+                            <img class="img-fluid" src="images/2.png" alt="">
+                            <br>
+                            <a>Наши космические корабли не уступает по комфорту лучшим отелям Земли!</a>
+                        </a>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <a class="item d-block mx-auto" href="#">
+                            <a>Каждый полет индивидуален!</a>
+                            <img class="img-fluid" src="images/3.png" alt="">
+                            <br>
+                            <a>Каждый полет мы делаем на основе ваших пожеланий!</a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <!-- Форма обратной связи -->
-            <div class="footer"></div>
+        <!-- Подробное описание продукта/услуги -->
+        <section class="showcase">
+            <div class="container-fluid p-0">
+                <div class="row no-gutters">
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('images/5.png');"></div>
+                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                        <h2>Почувствуйте себя настоящим космонавтом</h2>
+                        <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget dapibus ex, venenatis tincidunt lacus. Cras suscipit, diam eu consectetur dignissim, erat ipsum dictum enim, vitae iaculis ex urna eget.</p>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('images/6.png');"></div>
+                    <div class="col-lg-6 my-auto showcase-text">
+                        <h2>Комфортабельность</h2>
+                        <p class="lead mb-0">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dapibus erat aliquam erat consequat, eu auctor ligula venenatis. Curabitur neque leo, pellentesque ut feugiat quis, ullamcorper sed nisl. Quisque non.</p>
+                    </div>
+                </div>
+                <div class="row no-gutters">
+                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('images/4.png');"></div>
+                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+                        <h2>Каждый полет уникален</h2>
+                        <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget purus mauris. Vivamus non viverra eros, nec imperdiet felis. Etiam ut enim sapien. Duis nisl ante, egestas nec convallis at.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма обратной связи -->
+        <div class="footer bg-light">
+            <div class="container">
+                <h2 class="text-center text-uppercase text-secondary mb-0">Напишите нам!</h2>
+                <br>
+                <div class="col-lg-8 mx-auto">
+                    <form>
+                        <div class="form-group">
+                            <label>ФИО</label>
+                            <input class="form-control" id="name" type="text" placeholder="ФИО" required="required" >
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <label>E-mail</label>
+                            <input class="form-control" id="email" type="email" placeholder="E-mail" required="required" >
+                            <br>
+                        </div>
+                        <div class="form-group">
+                            <label>Телефон</label>
+                            <input class="form-control" id="phone" type="tel" placeholder="Телефон" required="required" >
+                            <br>
+                        </div>
+                        <div class="form-group text-center">
+                            <button class="btn btn-primary type=submit">Отправить!</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </body>
 </html>
