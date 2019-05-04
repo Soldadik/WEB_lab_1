@@ -16,9 +16,9 @@ document.getElementsByTagName("head")[0].appendChild(getQuote);
 var makeCollage = function makeQuote(response)
 {
     var collage = document.getElementById("collage");
+    var ctx = collage.getContext('2d');
     collage.height = 800;
     collage.width = 800;
-    var ctx = collage.getContext('2d');
     ctx.font = "28px Times New Roman";
     ctx.fillStyle = 'white';
     ctx.textAlign = "center";
@@ -83,7 +83,44 @@ var makeCollage = function makeQuote(response)
                     ctx.fillText(quoteLine, collage.width / 2, collage.height * 2.25 / 5 + lineHeight * line);
                     line++;
                 }
+                document.body.appendChild(downloadContent);
+                document.body.appendChild(updateContent);
             }
         }, false);
     }
+    
+    downloadContent.addEventListener('click', function (event)
+    {
+        downloadContent.href = collage.toDataURL('/image/jpeg', 1.0);
+        downloadContent.download = "your_collage.jpg";
+    }, false);
+
+    updateContent.addEventListener('click', function (event)
+    {
+        location.reload();
+    }, false);
 };
+
+var downloadContent = document.createElement('a');
+downloadContent.style.display = 'block';
+downloadContent.style.textAlign = 'center';
+downloadContent.style.cursor = 'pointer';
+downloadContent.style.width = '200px';
+downloadContent.style.padding = '20px';
+downloadContent.style.margin = '20px auto';
+downloadContent.style.border = '2px solid black';
+downloadContent.style.fontFamily = 'Times New Roman';
+downloadContent.innerHTML = 'Download';
+downloadContent.textDecoration = 'none';
+
+var updateContent = document.createElement('b');
+updateContent.style.display = 'block';
+updateContent.style.textAlign = 'center';
+updateContent.style.cursor = 'pointer';
+updateContent.style.width = '200px';
+updateContent.style.padding = '20px';
+updateContent.style.margin = '20px auto';
+updateContent.style.border = '2px solid black';
+updateContent.style.fontFamily = 'Times New Roman';
+updateContent.innerHTML = 'Update';
+updateContent.textDecoration = 'none';
