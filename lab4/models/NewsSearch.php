@@ -17,7 +17,7 @@ class NewsSearch extends News
     public function rules()
     {
         return [
-            [['headline', 'text', 'author', 'create_time', 'update_time'], 'safe'],
+            [['id', 'headline', 'text', 'author', 'create_time', 'update_time'], 'safe'],
         ];
     }
 
@@ -62,6 +62,7 @@ class NewsSearch extends News
         ]);
 
         $query->andFilterWhere(['like', 'headline', $this->headline])
+			->andFilterWhere(['like', 'id', $this->id])
             ->andFilterWhere(['like', 'text', $this->text])
             ->andFilterWhere(['like', 'author', $this->author]);
 

@@ -66,6 +66,7 @@ class News extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
+			'id' => 'ID',
             'headline' => 'Headline',
             'text' => 'Text',
             'author' => 'Author',
