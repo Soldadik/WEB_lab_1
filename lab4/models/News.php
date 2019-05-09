@@ -56,8 +56,8 @@ class News extends \yii\db\ActiveRecord
             [['text'], 'string'],
             [['create_time', 'update_time'], 'safe'],
             [['headline', 'author'], 'string', 'max' => 255],
+			['author', 'default', 'value' => 'Admin'],
         ];
-		
     }
 
     /**

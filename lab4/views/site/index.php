@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'Lab4 - PHP news portal (using Yii)';
 ?>
 <div class="site-index">
 

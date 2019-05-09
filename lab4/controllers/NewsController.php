@@ -8,6 +8,7 @@ use app\models\NewsSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\data\Pagination;
 use yii\db\ActiveRecord;
 use yii\behaviors\TimestampBehavior;
 
@@ -36,7 +37,7 @@ class NewsController extends Controller
      * @return mixed
      */
     public function actionIndex()
-    {
+    {		
         $searchModel = new NewsSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
